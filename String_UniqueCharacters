@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char brand[] = "Lenovo";
+    int count[256] = {0};
+
+    for (int i = 0; brand[i] != '\0'; i++) {
+        count[(unsigned char)brand[i]]++;
+    }
+
+    printf("Unique characters in '%s': ", brand);
+    for (int i = 0; i < 256; i++) {
+        if (count[i] == 1)
+            printf("%c ", i);
+    }
+    printf("\n");
+    return 0;
+}

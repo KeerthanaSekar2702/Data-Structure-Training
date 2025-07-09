@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char brands[][20] = {"Dell", "HP", "Lenovo", "Asus", "Apple", "MSI"};
+    int maxLength = 0;
+    char longest[20];
+
+    for (int i = 0; i < 6; i++) {
+        int len = strlen(brands[i]);
+        if (len > maxLength) {
+            maxLength = len;
+            strcpy(longest, brands[i]);
+        }
+    }
+
+    printf("Longest brand name is: %s\n", longest);
+    return 0;
+}

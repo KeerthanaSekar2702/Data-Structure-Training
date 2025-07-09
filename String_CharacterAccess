@@ -1,0 +1,6 @@
+#include <stdio.h>
+int main() {
+    char brand[] = "Asus";
+    printf("Second character: %c\n", brand[1]);
+    return 0;
+}

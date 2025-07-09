@@ -1,0 +1,8 @@
+#include <stdio.h>
+int main() {
+    char brand[] = "Apple";
+    for (int i = 0; brand[i] != '\0'; i++) {
+        printf("%c\n", brand[i]);
+    }
+    return 0;
+}

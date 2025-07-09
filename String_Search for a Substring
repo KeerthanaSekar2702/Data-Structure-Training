@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char sentence[] = "Popular brands are Dell, HP, and Lenovo";
+    char *found = strstr(sentence, "Dell");
+
+    if (found != NULL)
+        printf("Dell is found in the sentence.\n");
+    else
+        printf("Dell is not found.\n");
+
+    return 0;
+}

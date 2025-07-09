@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char str[100] = "Apple is a premium brand";
+    char result[100];
+    char *pos = strstr(str, "Apple");
+    if (pos != NULL) {
+        int index = pos - str;
+        strncpy(result, str, index);
+        result[index] = '\0';
+        strcat(result, "MSI");
+        strcat(result, pos + strlen("Apple"));
+        printf("Updated sentence: %s\n", result);
+    } else {
+        printf("Word not found.\n");
+    }
+    return 0;
+}

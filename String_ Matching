@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char brands[][20] = {"Dell", "HP", "Lenovo", "Asus"};
+
+    printf("Brands starting with 'A':\n");
+    for (int i = 0; i < 4; i++) {
+        if (brands[i][0] == 'A') {
+            printf("%s\n", brands[i]);
+        }
+    }
+
+    return 0;
+}

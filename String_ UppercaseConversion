@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <ctype.h>
+int main() {
+    char brand[] = "acer";
+    for (int i = 0; brand[i] != '\0'; i++) {
+        brand[i] = toupper(brand[i]);
+    }
+    printf("Uppercase string: %s\n", brand);
+    return 0;
+}
